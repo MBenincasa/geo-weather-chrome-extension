@@ -16,7 +16,7 @@
 <body>
   <div class="container py-4 custom-bg">
     <h1 class="text-center fs-2 fs-sm-3 fs-md-4">Geo Weather</h1>
-    <div class="weather-info p-4 rounded" style="min-width: 300px; max-width: 400px; margin: 0 auto;">
+    <div class="p-4 rounded" style="min-width: 500px; max-width: 700px; margin: 0 auto;">
       <div class="row mb-3">
         <div class="col text-center">
           <p class="lead mb-0 text-lg" id="location">Loading...</p>
@@ -35,6 +35,14 @@
         <div class="col">
           <div class="row">
             <div class="col-6 d-flex align-items-center">
+              <i class="fas fa-thermometer-empty"></i> <span id="min-temp" class="ms-2">Loading...</span>°C
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-end">
+              <span id="max-temp" class="ms-2">Loading...</span>°C <i class="fas fa-thermometer-full ms-2"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 d-flex align-items-center">
               <i class="fas fa-tint"></i> <span id="humidity" class="ms-2">Loading...</span>%
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
@@ -50,6 +58,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="/air-pollution.html" id="air-pollution-link" class="btn btn-dark">Air Pollution Information</a>
       </div>
     </div>
     <p id="error" class="text-danger mt-3"></p>

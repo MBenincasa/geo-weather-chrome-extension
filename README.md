@@ -9,6 +9,7 @@ Geo Weather is a Google Chrome extension that allows you to view weather informa
 - Displays the current temperature in Celsius.
 - Shows a brief description of the current weather conditions.
 - Provides additional information such as humidity, wind speed, rainfall, and snowfall (if available).
+- Provides air pollution data, including Air Quality Index (AQI) and concentrations of various pollutants like CO, NO, NO2, O3, SO2, PM2.5, PM10, and NH3.
 
 ## How it Works
 
@@ -22,9 +23,15 @@ The extension uses the free API from OpenWeatherMap to fetch weather data for yo
 4. Click "Load unpacked" and select the extension folder.
 5. The extension will be loaded and available in the top-right corner of the Chrome window.
 
+## Technologies Used
+
+- HTML
+- CSS (Bootstrap)
+- JavaScript
+
 ## OpenWeatherMap API Credentials
 
-The extension uses the free API from OpenWeatherMap to fetch weather data. To use the extension, you need to obtain a free API key from OpenWeatherMap and insert it into the `popup.js` file as the value of the `apiKey` variable.
+The extension uses the free API from OpenWeatherMap to fetch weather data. To use the extension, you need to obtain a free API key from OpenWeatherMap and insert it into the `config.json` file as the value of the `openWeatherMapApiKey` variable.
 
 ## License
 
