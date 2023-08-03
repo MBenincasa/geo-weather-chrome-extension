@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Geo Weather",
+    "version": "0.0.1",
+    "description": "Get weather information from OpenWeatherMap",
+    "action": {
+    "default_popup": "popup.html"
+  },
+    "permissions": [
+        "geolocation", 
+        "https://api.openweathermap.org/*"
+    ]
+}
