@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("config.json")
+  fetch("../config.json")
     .then((response) => response.json())
     .then((config) => {
       const apiKey = config.openWeatherMapApiKey;
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const backLink = document.getElementById("back-link");
   backLink.addEventListener("click", function () {
-    window.location.href = "/popup.html";
+    window.location.href = "/source/popup.html";
   });
 });
 

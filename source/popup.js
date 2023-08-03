@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("config.json")
+  fetch("../config.json")
     .then((response) => response.json())
     .then((config) => {
       const apiKey = config.openWeatherMapApiKey;
       getLocation(apiKey);
       const airPollutionLink = document.getElementById("air-pollution-link");
       airPollutionLink.addEventListener("click", function () {
-        window.location.href = "/air-pollution.html";
+        window.location.href = "/source/air-pollution.html";
       });
     })
     .catch((error) => {

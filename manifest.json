@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Get weather information from OpenWeatherMap",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "source/popup.html"
   },
   "permissions": [
     "geolocation"
