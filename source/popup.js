@@ -61,7 +61,7 @@ function displayWeather(data) {
   minTempElement.textContent = data.main.temp_min;
   weatherIcon.setAttribute(
     "src",
-    `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
   );
 
   moreInfoDiv.style.display = "block";

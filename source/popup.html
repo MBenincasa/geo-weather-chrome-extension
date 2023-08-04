@@ -9,59 +9,57 @@
   <meta charset="UTF-8"/>
   <style>
     .custom-bg {
-      background-color: #FFECC4;
+      background: linear-gradient(to bottom, #FAD7A0, #F9E79F);
     }
   </style>
 </head>
 <body>
   <div class="container py-4 custom-bg">
     <h1 class="text-center fs-2 fs-sm-3 fs-md-4">Geo Weather</h1>
-    <div class="p-4 rounded" style="min-width: 500px; max-width: 700px; margin: 0 auto;">
+    <div class="p-4 rounded" style="min-width: 300px; max-width: 500px; margin: 0 auto;">
       <div class="row mb-3">
         <div class="col text-center">
           <p class="lead mb-0 text-lg" id="location">Loading...</p>
           <p class="h1 mb-0 text-xl" id="temperature">Loading...</p>
           <div class="row align-items-center">
-            <div class="col-6 d-flex align-items-end">
-              <img src="placeholder.png" alt="Weather Icon" id="weather-icon" class="d-block mx-auto my-3">
-            </div>
-            <div class="col-6 d-flex align-items-start">
-              <p class="h4 text-md" id="description">Loading...</p>
+            <div class="col d-flex align-items-center">
+              <img alt="Weather Icon" id="weather-icon" class="d-block mx-auto my-3">
             </div>
           </div>
+          <p class="h1 mb-0 text-xl" id="description">Loading...</p>
         </div>
       </div>
       <div id="more-info" class="row mb-2" style="display: none;">
         <div class="col">
           <div class="row">
             <div class="col-6 d-flex align-items-center">
-              <i class="fas fa-thermometer-empty"></i> <span id="min-temp" class="ms-2">Loading...</span>°C
+              <i class="fas fa-thermometer-empty" title="Minimum temperature at the moment"></i> <span id="min-temp" class="ms-2">Loading...</span>°C
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
-              <span id="max-temp" class="ms-2">Loading...</span>°C <i class="fas fa-thermometer-full ms-2"></i>
+              <span id="max-temp" class="ms-2">Loading...</span>°C <i class="fas fa-thermometer-full ms-2" title="Maximum temperature at the moment"></i>
             </div>
           </div>
           <div class="row">
             <div class="col-6 d-flex align-items-center">
-              <i class="fas fa-tint"></i> <span id="humidity" class="ms-2">Loading...</span>%
+              <i class="fas fa-tint" title="Humidity"></i> <span id="humidity" class="ms-2">Loading...</span>%
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
-              <span id="wind-speed">Loading...</span> m/s <i class="fas fa-wind ms-2"></i>
+              <span id="wind-speed">Loading...</span> m/s <i class="fas fa-wind ms-2" title="Wind speed"></i>
             </div>
           </div>
           <div class="row">
             <div class="col-6 d-flex align-items-center">
-              <i class="fas fa-cloud-rain"></i> <span id="rain" class="ms-2">Loading...</span> mm
+              <i class="fas fa-cloud-rain" title="Rain volume for the last 1 hour"></i> <span id="rain" class="ms-2">Loading...</span> mm
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
-              <span id="snow">Loading...</span> mm <i class="fas fa-snowflake ms-2"></i>
+              <span id="snow">Loading...</span> mm <i class="fas fa-snowflake ms-2" title="Snow volume for the last 1 hour"></i>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-center mt-3">
-        <a href="#" id="air-pollution-link" class="btn btn-dark">Air Pollution Information</a>
-      </div>
+    </div>
+    <div class="text-center mt-3">
+      <a href="#" id="air-pollution-link" class="btn btn-dark">Air Pollution Information</a>
     </div>
     <p id="error" class="text-danger mt-3"></p>
   </div>

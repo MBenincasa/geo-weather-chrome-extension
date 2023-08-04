@@ -9,54 +9,74 @@
   <meta charset="UTF-8"/>
   <style>
     .custom-bg {
-      background-color: #FFECC4;
+      background: linear-gradient(to bottom, #FAD7A0, #F9E79F);
     }
   </style>
 </head>
 <body>
   <div class="container py-4 custom-bg">
     <h1 class="text-center fs-2 fs-sm-3 fs-md-4">Air Pollution Information</h1>
-    <div class="weather-info p-4 rounded" style="min-width: 500px; max-width: 700px; margin: 0 auto;">
+    <div class="p-4 rounded" style="min-width: 300px; max-width: 500px; margin: 0 auto;">
       <div class="row mb-2">
-        <div class="col-6"><strong>Air Quality Index (AQI):</strong></div>
-        <div class="col-6" id="aqi">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Air Quality Index (AQI)">AQI:</strong>
+        </div>
+        <div class="col-7" id="aqi" title="Air Quality Index. 1: Good, 2: Fair, 3: Moderate, 4: Poor, 5: Very Poor">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Carbon Monoxide (CO):</strong></div>
-        <div class="col-6" id="co">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Carbon Monoxide (CO)">CO:</strong>
+        </div>
+        <div class="col-7" id="co">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Nitrogen Monoxide (NO):</strong></div>
-        <div class="col-6" id="no">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Nitrogen Monoxide (NO)">NO:</strong>
+        </div>
+        <div class="col-7" id="no">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Nitrogen Dioxide (NO2):</strong></div>
-        <div class="col-6" id="no2">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Nitrogen Dioxide (NO2)">NO2:</strong>
+        </div>
+        <div class="col-7" id="no2">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Ozone (O3):</strong></div>
-        <div class="col-6" id="o3">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Ozone (O3)">O3:</strong>
+        </div>
+        <div class="col-7" id="o3">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Sulfur Dioxide (SO2):</strong></div>
-        <div class="col-6" id="so2">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Sulfur Dioxide (SO2)">SO2:</strong>
+        </div>
+        <div class="col-7" id="so2">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Particulate Matter (PM2.5):</strong></div>
-        <div class="col-6" id="pm25">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Particulate Matter (PM2.5)">PM2.5:</strong>
+        </div>
+        <div class="col-7" id="pm25">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Particulate Matter (PM10):</strong></div>
-        <div class="col-6" id="pm10">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Particulate Matter (PM10)">PM10:</strong>
+        </div>
+        <div class="col-7" id="pm10">Loading...</div>
       </div>
       <div class="row mb-2">
-        <div class="col-6"><strong>Ammonia (NH3):</strong></div>
-        <div class="col-6" id="nh3">Loading...</div>
+        <div class="col-5 d-flex align-items-center justify-content-end">
+          <strong title="Ammonia (NH3)">NH3:</strong>
+        </div>
+        <div class="col-7" id="nh3">Loading...</div>
       </div>
     </div>
     <div class="text-center mt-3">
-      <a href="#" id="back-link" class="btn btn-dark">Come back</a>
-    </div>
+      <a href="#" id="back-link" class="btn btn-dark">
+        <i class="fas fa-arrow-left"></i> Back
+      </a>
+    </div>    
     <p id="error" class="text-danger mt-3"></p>
   </div>
   <script src="air-pollution.js"></script>

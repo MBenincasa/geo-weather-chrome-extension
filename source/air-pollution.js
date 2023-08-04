@@ -54,14 +54,14 @@ function displayAirPollutionData(data) {
   const nh3Element = document.getElementById("nh3");
 
   aqiElement.textContent = data.list[0].main.aqi;
-  coElement.textContent = data.list[0].components.co;
-  noElement.textContent = data.list[0].components.no;
-  no2Element.textContent = data.list[0].components.no2;
-  o3Element.textContent = data.list[0].components.o3;
-  so2Element.textContent = data.list[0].components.so2;
-  pm25Element.textContent = data.list[0].components.pm2_5;
-  pm10Element.textContent = data.list[0].components.pm10;
-  nh3Element.textContent = data.list[0].components.nh3;
+  coElement.textContent = data.list[0].components.co + " µg/m³";
+  noElement.textContent = data.list[0].components.no + " µg/m³";
+  no2Element.textContent = data.list[0].components.no2 + " µg/m³";
+  o3Element.textContent = data.list[0].components.o3 + " µg/m³";
+  so2Element.textContent = data.list[0].components.so2 + " µg/m³";
+  pm25Element.textContent = data.list[0].components.pm2_5 + " µg/m³";
+  pm10Element.textContent = data.list[0].components.pm10 + " µg/m³";
+  nh3Element.textContent = data.list[0].components.nh3 + " µg/m³";
 }
 
 function showError(errorMsg) {
